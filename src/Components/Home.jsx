@@ -22,7 +22,7 @@ function Home() {
 
     fetchVideos();
   }, []);
-
+console.log (videos)
   const courses = [
     {
       id: 1,
@@ -79,22 +79,30 @@ function Home() {
 
       {/* Video Section */}
       <h3 className="text-xl ml-12 font-semibold text-gray-700 mb-4">Course Intro Video</h3>
-      <div className="p-6 flex flex-col sm:flex-row justify-between items-center sm:items-stretch gap-6">
-        {videos.length > 0 ? (
-          videos.map((video) => (
-            <video
-              key={video.id}
-              className="w-full sm:w-1/3 rounded-xl shadow-lg"
-              controls
-            >
-              <source src={video.video_file} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ))
-        ) : (
-          <p className="text-gray-600">No videos available at the moment.</p>
-        )}
-      </div>
+        <div className="p-6 flex flex-col sm:flex-row justify-between items-center sm:items-stretch gap-6">
+          {videos.length > 0 ? (
+            videos.map((video) => (
+              <div key={video.id} className="w-full sm:w-1/3 text-center">  {/* Center all content */}
+                <img
+                  src={video.cover_image_url}  // Use the absolute cover image URL
+                  alt={video.title}
+                  className="rounded-xl h-64 w-full object-cover shadow-lg" 
+                />
+                <h5 className="text-sm font-semibold text-gray-800 mb-2 mt-2">{video.title}</h5>
+                <p className="text-xs text-gray-800 mb-2 mt-2">{video.description}</p>
+                <button 
+                  className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300" 
+                  onClick={() => window.open(video.video_url, '_blank')}  // Open video in a new tab
+                >
+                  Watch Video
+                </button>
+              </div>
+            ))
+          ) : (
+            <p className="text-gray-600">No videos available at the moment.</p>
+          )}
+        </div>
+
 
       <div className="p-6">
         {/* Enrolled Courses Section */}
