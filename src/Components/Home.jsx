@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -45,6 +46,28 @@ function Home() {
   return (
     <>
       <Navbar/>
+    <section className="flex min-h-screen bg-gray-300 font-poppins pt-10 sm:pt-10">
+    <div className="flex flex-col md:flex-row justify-between bg-white rounded-lg p-8 items-center w-full">
+        <div className="md:ml-10 sm:mt-10 text-center md:text-left w-full md:w-2/3">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-12  text-custom-blue">
+                Empowering future<span className="text-custom-orange"> minds,</span> one lesson<span className="text-custom-orange"> at a time.</span>
+            </h1>
+            <p className=" text-lg font-normal">Rent any item, any time, from neighbors near you. Embrace experiences, save resources, and own memories on our platform.</p>
+            {/* <div className="mt-6 flex flex-col md:flex-row items-center">
+                <input type="text" placeholder="Search for an item ..." className="px-3 border-custom-orange py-2 rounded-full shadow-xl mr-4"></input>
+                <p className="mr-4 text-center">or</p>
+                <button href="/login" className="text-white bg-custom-orange py-2 px-4 rounded-full hover:bg-orange-500">List an item</button>
+            </div> */}
+        </div>
+        <div className="md:block w-2/3">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1681426678542-613c306013e1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="sharing"
+            className=" rounded-[39%_61%_38%_62%/42%_47%_53%_58%] mx-auto"
+          />
+        </div>
+    </div>
+    </section>
 	  <section  className='h-fit'>
         <h1 className="text-4xl font-semibold mb-8 text-custom-orange text-center ">Explore our categories</h1>
             <div id='categories' className="relative">
@@ -77,6 +100,38 @@ function Home() {
             </Carousel>
             </div>
     </section>
+    <section id='how-it-works' className="py-16 px-4 h-auto mt-16">
+    {/* <h1 className="text-4xl font-semibold mb-8 text-center text-custom-orange">How it works</h1> */}
+    <div className="flex flex-col md:flex-row items-center justify-around mx-auto">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0">
+            <img src='/images/undraw_Transfer_money_re_6o1h.png' className="mx-auto" width="500px" alt='earn' />
+        </div>
+        <div className="lg:w-1/3 md:w-1/2 text-center md:text-left">
+            <h2 className="text-2xl font-medium mb-4 text-custom-orange">Explain concepts faster with learning resources</h2>
+            <p className="text-base font-normal mb-6 mx-auto md:mx-0">Use pre-made visuals to clarify concepts quickly, capture students' attention, and reduce the need for repeated explanations.</p>
+            <Link to="/dashboard">
+                <button className="bg-custom-orange hover:bg-custom-orange text-white text-base font-medium py-2 px-2.5 rounded-3xl">
+                    Learn more
+                </button>
+            </Link>
+        </div>
+    </div>
+    <div className="flex flex-col md:flex-row mt-12 space-x-0 md:space-x-4 items-center justify-around mx-auto">
+        <div className="lg:w-1/3 md:w-1/2 text-center md:text-right mb-8 md:mb-0">
+            <h2 className="text-2xl font-medium mb-4 text-custom-orange">Students can now revisit your science experiments anytime.</h2>
+            <p className="text-base font-normal mb-6 mx-auto md:mx-0">Students can now access your science experiments on demand, enabling them to review concepts anytime they need.</p>
+            <Link to="/products">
+                <button className="bg-custom-orange hover:bg-custom-orange text-white text-base font-medium py-2 px-2.5 rounded-3xl">
+                    Learn more
+                </button>
+            </Link>
+        </div>
+        <div className="w-full md:w-1/2">
+            <img src='/images/undraw_Compose_music_re_wpiw.png' className="mx-auto" width="500px" alt='' />
+        </div>
+    </div>
+</section>
+
     <Footer/>
     </>
   );
