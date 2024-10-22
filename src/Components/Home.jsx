@@ -3,6 +3,7 @@ import axios from 'axios';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Home() {
 
@@ -76,6 +77,7 @@ function Home() {
             </Carousel>
             </div>
     </section>
+    <Footer/>
     </>
   );
 }
