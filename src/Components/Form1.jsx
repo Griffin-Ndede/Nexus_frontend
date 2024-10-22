@@ -23,7 +23,7 @@ function Form1() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {videos.length > 0 ? (
               videos.map((video) => (
-                <div key={video.id} className="bg-white rounded-lg shadow-lg">
+                <div key={video.id} className="bg-white rounded-3xl shadow-2xl">
                   <img
                     src={video.cover_image_url}
                     alt={video.title}
@@ -33,7 +33,7 @@ function Form1() {
                     <h5 className="text-lg font-semibold text-gray-800 mb-2">{video.title}</h5>
                     <p className="text-sm text-gray-600 mb-4">{video.description}</p>
                     <button
-                      className="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                      className="w-full mt-4  bg-custom-blue text-white py-2 rounded-3xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
                       onClick={() => window.open(video.video_url, '_blank')}
                     >
                       Watch Video

@@ -104,13 +104,13 @@ function Dashboard() {
                     <div className="mt-4">
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
                         <div
-                          className="bg-blue-600 h-2.5 rounded-full"
+                          className="bg-custom-blue h-2.5 rounded-full"
                           style={{ width: `${course.progress}%` }}
                         ></div>
                       </div>
                       <p className="mt-2 text-sm text-gray-500">Progress: {course.progress}%</p>
                     </div>
-                    <button className="w-full mt-4 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                    <button className="w-full mt-4 bg-custom-blue text-white py-2 rounded-3xl hover:bg-custom-orange">
                       Continue Learning
                     </button>
                   </div>
@@ -148,7 +148,7 @@ function Dashboard() {
                   />
                   <div className="p-4">
                     <h4 className="text-lg font-semibold text-gray-800">{course.title}</h4>
-                    <button className="w-full mt-4 bg-gray-200 text-blue-600 py-2 rounded-lg hover:bg-gray-300">
+                    <button className="w-full mt-4 bg-custom-blue text-white py-2 rounded-3xl hover:bg-custom-orange">
                       View Course
                     </button>
                   </div>
