@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 function Dashboard() {
   const profile = {
@@ -58,6 +59,8 @@ console.log (videos)
   ];
 
   return (
+    <> 
+    <Navbar/>
     <div className="min-h-screen bg-gray-100">
       {/* Profile Section */}
       <div className="bg-white shadow-sm p-6 flex justify-between items-center">
@@ -176,6 +179,7 @@ console.log (videos)
         </div>
       </div>
     </div>
+    </>
   );
 }
 
