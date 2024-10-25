@@ -30,6 +30,14 @@ const SideNav = ({ setSelectedClass }) => {
               Form 3
             </button>
           </li>
+          <li>
+            <button
+              onClick={() => setSelectedClass('Form4')}
+              className="block w-2/3 text-left p-2 ml-3 text-lg rounded-lg transition-colors duration-300  hover:text-custom-orange"
+            >
+              Form 4
+            </button>
+          </li>
         </ul>
       </div>
       <div className="p-4 text-center">

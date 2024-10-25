@@ -8,7 +8,7 @@ function Form1() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/videos/");
+        const response = await axios.get("http://127.0.0.1:8000/videos/form1/");
         setVideos(response.data);
       } catch (error) {
         console.error("Error fetching videos:", error);
@@ -33,7 +33,7 @@ function Form1() {
                     <h5 className="text-lg font-semibold text-gray-800 mb-2">{video.title}</h5>
                     <p className="text-sm text-gray-600 mb-4">{video.description}</p>
                     <button
-                      className="w-full mt-4  bg-custom-blue text-white py-2 rounded-3xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                      className="w-full mt-4  bg-custom-blue text-white py-2 rounded-3xl hover:bg-custom-orange focus:outline-none focus:ring-2 focus:ring-blue-300"
                       onClick={() => window.open(video.video_url, '_blank')}
                     >
                       Watch Video
