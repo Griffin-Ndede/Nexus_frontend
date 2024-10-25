@@ -91,7 +91,7 @@ function Dashboard() {
           
 
           {/* Enrolled Courses Section */}
-          <div className="my-8">
+          {/* <div className="my-8">
             <h3 className="text-2xl font-bold text-gray-700">Your Courses</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
               {courses.map((course) => (
@@ -120,10 +120,10 @@ function Dashboard() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Upcoming Deadlines Section */}
-          <div className="my-8">
+          {/* <div className="my-8">
             <h3 className="text-2xl font-bold text-gray-700">Upcoming Deadlines</h3>
             <ul className="mt-4 space-y-4">
               {upcomingDeadlines.map((deadline) => (
@@ -136,10 +136,10 @@ function Dashboard() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Recommended Courses Section */}
-          <div className="my-8">
+          {/* <div className="my-8">
             <h3 className="text-2xl font-bold text-gray-700">Recommended Courses</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
               {recommendations.map((course) => (
@@ -158,7 +158,7 @@ function Dashboard() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
