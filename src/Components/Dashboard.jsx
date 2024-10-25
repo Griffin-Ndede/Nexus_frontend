@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import SideNav from './SideNav';
 import Form1 from './Form1';
 import Form2 from './Form2';
@@ -27,49 +27,49 @@ function Dashboard() {
     }
   };
 
-  const courses = [
-    {
-      id: 1,
-      title: "Machine Learning",
-      image: "https://via.placeholder.com/400",
-      progress: 85,
-      instructor: "Andrew Ng",
-    },
-    {
-      id: 2,
-      title: "Web Development",
-      image: "https://via.placeholder.com/400",
-      progress: 60,
-      instructor: "John Doe",
-    },
-    {
-      id: 3,
-      title: "Data Science",
-      image: "https://via.placeholder.com/400",
-      progress: 30,
-      instructor: "Jane Smith",
-    },
-  ];
+  // const courses = [
+  //   {
+  //     id: 1,
+  //     title: "Machine Learning",
+  //     image: "https://via.placeholder.com/400",
+  //     progress: 85,
+  //     instructor: "Andrew Ng",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Web Development",
+  //     image: "https://via.placeholder.com/400",
+  //     progress: 60,
+  //     instructor: "John Doe",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Data Science",
+  //     image: "https://via.placeholder.com/400",
+  //     progress: 30,
+  //     instructor: "Jane Smith",
+  //   },
+  // ];
 
-  const upcomingDeadlines = [
-    { id: 1, task: "Complete Quiz 3 - Machine Learning", due: "Oct 20, 2024" },
-    { id: 2, task: "Submit Assignment - Web Development", due: "Oct 22, 2024" },
-  ];
+  // const upcomingDeadlines = [
+  //   { id: 1, task: "Complete Quiz 3 - Machine Learning", due: "Oct 20, 2024" },
+  //   { id: 2, task: "Submit Assignment - Web Development", due: "Oct 22, 2024" },
+  // ];
 
-  const recommendations = [
-    { id: 1, title: "Deep Learning Specialization", image: "https://via.placeholder.com/400" },
-    { id: 2, title: "React for Beginners", image: "https://via.placeholder.com/400" },
-  ];
+  // const recommendations = [
+  //   { id: 1, title: "Deep Learning Specialization", image: "https://via.placeholder.com/400" },
+  //   { id: 2, title: "React for Beginners", image: "https://via.placeholder.com/400" },
+  // ];
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="flex min-h-screen">
         {/* Side Navigation */}
         <SideNav setSelectedClass={setSelectedClass} />
 
         {/* Main Content */}
-        <div className="flex-1 bg-gray-100 pt-16 px-6">
+        <div className="flex-1 bg-gray-100 px-6">
           {/* Profile Section */}
           <div className="bg-white shadow-sm p-6 flex justify-between items-center">
             <div className="flex items-center">
