@@ -15,7 +15,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path = "" element = {<Home/>}></Route>
+      <Route path = "/" element = {<Home/>}></Route>
       <Route path = "/dashboard" element = {<Dashboard/>}></Route>
       {/* <Route path = "/maindash" element = {<MainDash/>}></Route> */}
             <Route path="/form1" element={<Form1 />} />

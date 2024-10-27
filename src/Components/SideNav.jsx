@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SideNav = ({setSelectedClass}) => {
   return (
     <nav className="w-56  h-screen bg-custom-blue text-white flex flex-col justify-between  top-0">
       <div className="mt-8">
+        <Link to = "/">
         <h2 className="text-3xl font-bold text-left text-white mb-4 p-2 ml-3">Nexus</h2>
+        </Link>
         <h3 className="text-2xl font-bold text-left text-white p-2 ml-3">Class Levels</h3>
         <ul className="space-y-4">
           <li>

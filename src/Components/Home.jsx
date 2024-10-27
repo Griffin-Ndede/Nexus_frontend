@@ -10,7 +10,7 @@ function Home() {
 
 	const [categories, setCategories] = useState([])
 
-	const URL = 'http://127.0.0.1:8000/categories/';
+	const URL = 'https://nexus-backend-kia6.onrender.com/categories/';
 
     // Fetching data on the categories from the json file
     useEffect(() => {
@@ -92,7 +92,7 @@ function Home() {
             <Link to="dashboard" key={category.id}> 
               <div className="carousel-item">
                 <img
-                  src={`http://127.0.0.1:8000${category.image}`}
+                  src={`https://nexus-backend-kia6.onrender.com${category.image}`}
                   alt={category.title}
                   className="p-4 items-center w-3/4 md:w-96 md:max-w-xs h-48 rounded-3xl object-cover drop-shadow-xl"
                 />
