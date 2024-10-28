@@ -94,7 +94,7 @@ function Home() {
                 <img
                   src={`https://res.cloudinary.com/dfycvaiv7/${category.image}`}
                   alt={category.title}
-                  className="p-4 items-center w-3/4 md:w-96 md:max-w-xs h-48 rounded-3xl object-cover drop-shadow-xl"
+                  className="p-4 items-center w-3/4 md:w-96 md:max-w-xs h-48 rounded-3xl object-cover drop-shadow-3xl"
                 />
                 <p className="text-sm font-normal text-center mt-6">{category.title}</p>
               </div>
