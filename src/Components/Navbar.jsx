@@ -6,7 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="shadow-xl fixed w-full bg-white text-custom-blue">
+    <nav className="shadow-xl fixed top-0 w-full bg-white text-custom-blue">
         <div className="flex items-center justify-between h-16">
         <div className="flex items-center">
         <Link to="/">

@@ -26,8 +26,7 @@ function ContactUs() {
   return (
     <>
       <Navbar />
-      
-      <div className="relative mt-16 w-full h-96">
+      <section className="relative w-full mt-16 h-96">
         <img
           className="absolute h-full w-full object-cover object-center"
           src="https://bucket.material-tailwind.com/magic-ai/bbe71871de8b4d6f23bb0f17a6d5aa342f3dea72677ba7238b18defa3741244d.jpg"
@@ -38,9 +37,9 @@ function ContactUs() {
           <h2 className="text-3xl lg:text-4xl font-semibold text-white">Get in touch with us</h2>
           <p className="text-xl text-white opacity-70">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
-      </div>
+      </section>
       
-      <div className="py-12 flex justify-center shadow-md container mx-auto">
+      <div className="py-12 flex justify-center shadow-md container mx-auto relative z-10">
         <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-6">
           <div>
             <label className="text-gray-500">Enter your name</label>
