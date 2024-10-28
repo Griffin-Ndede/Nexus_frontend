@@ -25,8 +25,8 @@ const SideNav = ({ setSelectedClass, setIsMenuOpen }) => {
           ))}
         </ul>
       </div>
-      <div className="p-4 text-center">
-        <p className="text-sm text-gray-400">&copy; 2024 Your LMS</p>
+      <div className="p-4">
+        <p className="text-sm text-gray-400">&copy; Nexus 2024</p>
       </div>
     </nav>
   );
