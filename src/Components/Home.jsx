@@ -92,7 +92,7 @@ function Home() {
             <Link to="dashboard" key={category.id}> 
               <div className="carousel-item">
                 <img
-                  src={`https://nexus-backend-kia6.onrender.com${category.image}`}
+                  src={`https://res.cloudinary.com/dfycvaiv7/${category.image}`}
                   alt={category.title}
                   className="p-4 items-center w-3/4 md:w-96 md:max-w-xs h-48 rounded-3xl object-cover drop-shadow-xl"
                 />
