@@ -26,7 +26,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-              <Link to='/products' className="hover:text-custom-orange">
+              <Link to='/contact' className="hover:text-custom-orange">
                 Contact us
               </Link>
             </li>
