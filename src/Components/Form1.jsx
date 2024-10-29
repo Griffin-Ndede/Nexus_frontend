@@ -8,8 +8,9 @@ function Form1() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/videos/form1/");
+        const response = await axios.get("https://nexus-backend-kia6.onrender.com/videos/form1/");
         setVideos(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error("Error fetching videos:", error);
       }
