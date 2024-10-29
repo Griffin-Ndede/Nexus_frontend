@@ -4,8 +4,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Navbar() {
   return (
-    <nav className="shadow-xl fixed top-0 w-full bg-white text-custom-blue">
-      <div className="flex items-center justify-between h-16">
+    <nav className="shadow-xl fixed top-0 w-full bg-white text-custom-blue justify-around">
+      <div className="flex items-center justify-between h-16 pr-20">
         <div className="flex items-center">
           <Link to="/">
             <h1 className="text-3xl text-custom-blue font-bold ml-5 sm:ml-4 md:ml-6 lg:ml-20">
