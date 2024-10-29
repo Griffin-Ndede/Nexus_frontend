@@ -52,7 +52,7 @@ function Home() {
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-12 text-custom-blue">
         Empowering future<span className="text-custom-orange"> minds,</span> one lesson<span className="text-custom-orange"> at a time.</span>
       </h1>
-      <p className="text-lg font-normal">Rent any item, any time, from neighbors near you. Embrace experiences, save resources, and own memories on our platform.</p>
+      {/* <p className="text-lg font-normal">Rent any item, any time, from neighbors near you. Embrace experiences, save resources, and own memories on our platform.</p> */}
     </div>
     <div className="md:block w-2/3">
       <img

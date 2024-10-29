@@ -10,7 +10,7 @@ const SideNav = ({ setSelectedClass, setIsMenuOpen }) => {
         </Link>
         <h3 className="text-2xl font-bold text-left text-white p-2 ml-3">Class Levels</h3>
         <ul className="space-y-4">
-          {['Form1', 'Form2', 'Form3', 'Form4'].map((form, index) => (
+          {['Form 1', 'Form 2', 'Form 3', 'Form 4'].map((form, index) => (
             <li key={index}>
               <button
                 onClick={() => {
