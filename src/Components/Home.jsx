@@ -5,8 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-import { FaCalendarCheck, FaChartLine } from "react-icons/fa";
-import { FaListCheck } from "react-icons/fa6";
+
 
 function Home() {
   const [categories, setCategories] = useState([]);
@@ -51,54 +50,6 @@ function Home() {
   return (
     <>
       <Navbar />
-      <section id="home" className="min-h-screen  mt-20">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-    <div className="text-center">
-      <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl mb-6 text-custom-orange">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </h1>
-      <p className="text-lg sm:text-xl lg:text-2xl font-light max-w-4xl mx-auto mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam possimus facilis odit rem ducimus quas deleniti voluptatibus, vero voluptatem nemo?
-      </p>
-      <a
-        href="/login"
-        className="inline-block bg-custom-orange text-white px-8 py-3 rounded-3xl text-lg sm:text-xl hover:bg-green-700 transition duration-300"
-      >
-        Get Started
-      </a>
-    </div>
-
-    {/* Feature Cards Section */}
-    <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* Card 1 */}
-      <div className="flex flex-col items-center p-6 shadow-2xl rounded-3xl bg-white">
-        <FaCalendarCheck className="text-4xl text-custom-orange mb-4" />
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">Input Scheduling</h3>
-        <p className="text-gray-600 text-center">
-          Track and plan your farm inputs with an intelligent calendar system.
-        </p>
-      </div>
-
-      {/* Card 2 */}
-      <div className="flex flex-col items-center p-6 shadow-2xl rounded-3xl bg-white">
-        <FaChartLine className="text-4xl text-custom-orange mb-4" />
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">Performance Analytics</h3>
-        <p className="text-gray-600 text-center">
-          Analyze farm performance and optimize your agricultural practices.
-        </p>
-      </div>
-
-      {/* Card 3 */}
-      <div className="flex flex-col items-center p-6 shadow-2xl rounded-3xl bg-white">
-        <FaListCheck className="text-4xl text-custom-orange mb-4" />
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">Crop Management</h3>
-        <p className="text-gray-600 text-center">
-          Monitor crop cycles from planting to harvest with precise timing.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
       <section className="flex min-h-screen bg-gray-300 font-poppins">
         <div className="flex flex-col md:flex-row justify-between bg-white rounded-lg p-8 items-center w-full">
           <div className="md:ml-10 sm:mt-32 text-center md:text-left w-full md:w-2/3 pt-32">
@@ -178,7 +129,7 @@ function Home() {
               Explain concepts faster with learning resources
             </h2>
             <p className="text-base font-normal mb-6 mx-auto md:mx-0">
-              Use pre-made visuals to clarify concepts quickly, capture students' attention, and reduce the need for
+              Use pre-made visuals to clarify concepts quickly, capture student&apos;s attention, and reduce the need for
               repeated explanations.
             </p>
             <Link to="/dashboard">
